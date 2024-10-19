@@ -1,14 +1,10 @@
 print('Введите три числа: ')
-number1, number2, number3 = input('Первое число: '), input('Второе число: '), input('Третье число: ')
-print(number1, number2, number3)
-#if number1 == number2 or number2 == number3 or number1 == number3: # вариант с оператором 'or'
-if number1 == number2:
-    print(2)
-elif number2 == number3:
-    print(2)
-elif number3 == number1:
-    print(2)
-elif number1 == number2 == number3:
+#num1, num2, num3 = map(int, input().split())
+num1, num2, num3 = int(input('Первое число: ')), int(input('Второе число: ')), int(input('Третье число: '))
+if num1 == num1 == num3:
     print(3)
+elif num1 == num1 or num1 == num3 or num1 == num3:
+    print(2)
 else:
     print(0)
+
